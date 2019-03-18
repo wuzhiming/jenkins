@@ -1,0 +1,10 @@
+pipeline {
+    agent {label 'mac'}
+    stages {
+        stage('Stage 1') {
+            steps {
+                sh 'node -v'
+            }
+        }
+    }
+}
